@@ -9,7 +9,8 @@ Below are some of the key visualisations produced during the analysis.
 
 ## Loan status distribution
 
-![image](https://github.com/user-attachments/assets/3da0485b-d9ab-4051-87a8-83182810655c)
+![image](https://github.com/user-attachments/assets/4cca9432-8366-44d1-a046-f7937e0b014c)
+
 
 
 ## Age and loan term impact
@@ -24,7 +25,8 @@ Below are some of the key visualisations produced during the analysis.
 
 ## Final model confusion matrix
 
-![image](https://github.com/user-attachments/assets/b37503b2-4a67-4f91-b17f-1fb06b817fbc)
+![image](https://github.com/user-attachments/assets/d9981243-1a3e-4945-ba31-ce1722629728)
+
 
 
 
