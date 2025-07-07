@@ -1,4 +1,30 @@
 # Scoring Model
+
+## Purpose
+This project was created as a portfolio piece to demonstrate practical skills in credit scoring, feature engineering, and model interpretability.
+
+## Dataset
+This project uses the **Financial Risk** dataset from Kaggle:
+https://www.kaggle.com/code/sasinidabare/predictive-analysis-for-financial-risk-data
+Download the dataset manually from Kaggle and place files (e.g. `5k.csv`) into the `data/` folder before running the notebook or scripts.
+
+The dataset contains information on 5,000 financial customers and is used to predict loan approval status based on demographic, behavioral, and financial features.
+**Key features:**
+- `Age`, `Occupation`, `Income Level`, `Employment Status`
+- Account activity: `Deposits`, `Withdrawals`, `Transfers`, `Investments`
+- Loan info: `Loan Amount`, `Loan Term (Months)`, `Interest Rate`, `Loan Purpose`
+- **Target:** `Loan Status` — approved, pending, or declined
+
+Most monetary fields are stored as strings (e.g. `"$50000.00"`) and need to be cleaned during preprocessing.
+
+## Tech Stack
+- Python, Jupyter Notebook
+- pandas, numpy, matplotlib, seaborn
+- CatBoost, scikit-learn
+- MLflow
+- SHAP (feature importance)
+
+
 This repository contains a credit scoring pipeline implemented in the notebook [`scoring.ipynb`](notebooks/scoring.ipynb). The notebook walks through several stages:
 
 1. **Baseline** – training a simple CatBoost model and evaluating initial metrics.
@@ -26,6 +52,13 @@ Below are some of the key visualisations produced during the analysis.
 ## Final model confusion matrix
 
 ![image](https://github.com/user-attachments/assets/d9981243-1a3e-4945-ba31-ce1722629728)
+
+## Results Summary
+
+- Final model: CatBoostClassifier
+- ROC AUC (multi-class): **0.8473**
+- Gini coefficient: **0.6945**
+- Key features: 
 
 
 
