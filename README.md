@@ -59,6 +59,13 @@ Below are some of the key visualisations produced during the analysis.
 - ROC AUC (multi-class): **0.8473**
 - Gini coefficient: **0.6945**
 - Key features: 
+- **Interest Rate** — strongest overall influence across all classes
+- **Loan Amount Log** — key for differentiating between Class 1 and 2
+- **Loan Purpose** — categorical driver for loan status
+  
+The plot (SHAP) below shows the average impact of each feature on the model's predictions across all classes. This helps interpret how the model makes decisions for different loan statuses.
+![image](https://github.com/user-attachments/assets/2ed66c4d-32b9-4b25-9b70-6718a76b1dcd)
+
 
 
 
