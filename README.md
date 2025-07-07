@@ -63,6 +63,29 @@ Below are some of the key visualisations produced during the analysis.
 The plot (SHAP) below shows the average impact of each feature on the model's predictions across all classes. This helps interpret how the model makes decisions for different loan statuses.
 ![image](https://github.com/user-attachments/assets/2ed66c4d-32b9-4b25-9b70-6718a76b1dcd)
 
+## How to Run
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Download the dataset from Kaggle and place it into the `data/` folder.
+3. Run the pipeline scripts from `src`:
+   ```bash
+   # preprocess, train and evaluate in one step
+   python src/main.py --data data/5k.csv
+
+   # optional: run with MLflow tracking
+   python src/train_with_mlflow.py --data data/5k.csv
+   ```
+   Internally the modules are executed in the following order:
+   1. `preprocessing.py`
+   2. `train.py`
+   3. `evaluate.py`
+4. Launch the notebook:
+   ```bash
+   jupyter notebook notebooks/scoring.ipynb
+   ```
+
 
 
 
